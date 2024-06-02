@@ -21,7 +21,7 @@ on fs
    insmod /vendor/lib/modules/nova_0flash_mmi.ko
    insmod /vendor/lib/modules/qpnp_adaptive_charge.ko
    insmod /vendor/lib/modules/qpnp-power-on-mmi.ko
-   exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules sensor_class abov_sar_mmi_overlay audio_snd_soc_aw882xx
+   exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules audio_snd_soc_aw882xx
 
 on post-fs-data
    # Load DLKM that can afford being loaded later
@@ -39,30 +39,9 @@ on early-boot
    mkdir /mnt/vendor/persist/goodix 0770 system system
 
 on boot
-   # change permission for capsensor
-   chown system system /sys/class/capsense/reset
-   chown system system /sys/class/capsense/int_state
-
    # change permission for adaptive charging
    chown system system /sys/module/qpnp_adaptive_charge/parameters/upper_limit
    chown system system /sys/module/qpnp_adaptive_charge/parameters/lower_limit
-   # change ownership of display early suspend node
-   chown root system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/dsi_display_early_power
-   chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/dsi_display_early_power
-
-#service vendor.mmi_modules /vendor/bin/init.mmi.modules.sh
-#    user root
-#    oneshot
-#    disabled
-
-service capsense_reset /system/vendor/bin/capsense_reset
-   class core
-   user system
-   group system input
-   disabled
-
-on property:sys.boot_completed=1
-    start capsense_reset
 
 service vendor.motpsd /vendor/bin/motpsd
     class late_start

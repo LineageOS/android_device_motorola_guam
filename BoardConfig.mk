@@ -7,36 +7,22 @@
 # Inherit from sm6225-common
 include device/motorola/sm6225-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/motorola/guamp
+DEVICE_PATH := device/motorola/guam
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := guamp
+TARGET_BOOTLOADER_BOARD_NAME := guam
 
 # Display
 TARGET_SCREEN_DENSITY := 280
 
 # HIDL
-ODM_MANIFEST_SKUS += b c d dc dn dnc fb fc fd fdc fdn fdnc fn fnc n nc
+ODM_MANIFEST_SKUS += b f
 ODM_MANIFEST_B_FILES := $(DEVICE_PATH)/sku/manifest_b.xml
-ODM_MANIFEST_C_FILES := $(DEVICE_PATH)/sku/manifest_c.xml
-ODM_MANIFEST_D_FILES := $(DEVICE_PATH)/sku/manifest_d.xml
-ODM_MANIFEST_DC_FILES := $(DEVICE_PATH)/sku/manifest_dc.xml
-ODM_MANIFEST_DN_FILES := $(DEVICE_PATH)/sku/manifest_dn.xml
-ODM_MANIFEST_DNC_FILES := $(DEVICE_PATH)/sku/manifest_dnc.xml
-ODM_MANIFEST_FB_FILES := $(DEVICE_PATH)/sku/manifest_fb.xml
-ODM_MANIFEST_FC_FILES := $(DEVICE_PATH)/sku/manifest_fc.xml
-ODM_MANIFEST_FD_FILES := $(DEVICE_PATH)/sku/manifest_fd.xml
-ODM_MANIFEST_FDC_FILES := $(DEVICE_PATH)/sku/manifest_fdc.xml
-ODM_MANIFEST_FDN_FILES := $(DEVICE_PATH)/sku/manifest_fdn.xml
-ODM_MANIFEST_FDNC_FILES := $(DEVICE_PATH)/sku/manifest_fdnc.xml
-ODM_MANIFEST_FN_FILES := $(DEVICE_PATH)/sku/manifest_fn.xml
-ODM_MANIFEST_FNC_FILES := $(DEVICE_PATH)/sku/manifest_fnc.xml
-ODM_MANIFEST_N_FILES := $(DEVICE_PATH)/sku/manifest_n.xml
-ODM_MANIFEST_NC_FILES := $(DEVICE_PATH)/sku/manifest_nc.xml
+ODM_MANIFEST_F_FILES := $(DEVICE_PATH)/sku/manifest_f.xml
 
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 2
-TARGET_KERNEL_CONFIG += vendor/ext_config/guamp-default.config
+TARGET_KERNEL_CONFIG += vendor/ext_config/guam-default.config
 
 # Kernel Modules - Recovery
 BOARD_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load.recovery))
@@ -65,4 +51,4 @@ VENDOR_SECURITY_PATCH := 2022-09-01
 BOARD_AVB_ROLLBACK_INDEX := 20
 
 # Inherit from the proprietary version
-include vendor/motorola/guamp/BoardConfigVendor.mk
+include vendor/motorola/guam/BoardConfigVendor.mk
