@@ -8,7 +8,7 @@
 
 set -e
 
-export DEVICE=guamp
+export DEVICE=guam
 export DEVICE_COMMON=sm6225-common
 export VENDOR=motorola
 

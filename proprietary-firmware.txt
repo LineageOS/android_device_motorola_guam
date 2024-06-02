@@ -1,4 +1,4 @@
-# All firmware images below are extracted from guamp_retail RPXS31.Q2-58-17-7-3
+# All firmware images below are extracted from guam_retail QPZS30.30-Q3-38-69-12
 
 abl.elf:abl.img;AB
 BTFM.bin:bluetooth.img;AB
