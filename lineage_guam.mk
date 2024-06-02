@@ -9,21 +9,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from device
-$(call inherit-product, device/motorola/guamp/device.mk)
+$(call inherit-product, device/motorola/guam/device.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_guamp
-PRODUCT_DEVICE := guamp
+PRODUCT_NAME := lineage_guam
+PRODUCT_DEVICE := guam
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := moto g(9)
+PRODUCT_MODEL := moto e7 plus
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
-BUILD_FINGERPRINT := "motorola/guamp_retail/guamp:11/RPXS31.Q2-58-17-7-3/ad9c24:user/release-keys"
+BUILD_FINGERPRINT := "motorola/guam_retail/guam:10/QPZS30.30-Q3-38-69-12/916393:user/release-keys"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_PRODUCT=guamp_retail \
-    PRIVATE_BUILD_DESC="guamp_retail-user 11 RPXS31.Q2-58-17-7-3 ad9c24 release-keys"
+    TARGET_PRODUCT=guam_retail \
+    PRIVATE_BUILD_DESC="guam_retail-user 10 QPZS30.30-Q3-38-69-12 916393 release-keys"
