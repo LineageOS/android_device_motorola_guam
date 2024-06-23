@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f24d2892_42a6c2ad",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2024-06-23T18:38:24Z",
+      "side": 1,
+      "message": "This is not needed, just run `./extract-files --kang --section \"Camera - from guamp_retail\"` and it will print the file list along with the sha1sums",
+      "revId": "cfc10348adf94a88edaeb29dee742086b1c11924",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
