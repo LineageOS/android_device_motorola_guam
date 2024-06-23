@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_guamp.mk
+    $(LOCAL_DIR)/lineage_guam.mk
