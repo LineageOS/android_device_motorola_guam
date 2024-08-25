@@ -10,7 +10,7 @@ vendor/etc/acdbdata/Headset_cal.acdb
 vendor/etc/acdbdata/Speaker_cal.acdb
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
-# Audio Firmware
+# Audio firmware
 vendor/firmware/aw882xx_mono.bin
 vendor/firmware/aw882xx_rcv_reg.bin
 vendor/firmware/aw882xx_spk_reg.bin
@@ -35,7 +35,6 @@ vendor/lib64/camera/com.qti.tuned.mot_guam_s5k4h7.bin
 vendor/lib64/camera/com.qti.tuned.mot_guam_s5kgm1st.bin
 
 # Camera - from guamp_retail RPXS31.Q2-58-17-7-3
-vendor/lib/libcamxexternalformatutils.so|e5d5947047223a84aa31f281d8d4f141fbd56b81
 vendor/lib64/camera/components/com.qti.camx.chiiqutils.so|c184c5f28b792d17976d133b1f812d52fc11262d
 vendor/lib64/camera/components/com.qti.eisv2.so|e70a2ac7d546c8b426437314bcb55192745bdcd8
 vendor/lib64/camera/components/com.qti.eisv3.so|9fb740927ef2421351f83de20a09cfd11732f4b7
@@ -133,7 +132,7 @@ vendor/lib64/libswregistrationalgo.so|a647844c7fbab585cc5678247a79ef59bdfaf034
 vendor/lib64/libtfestriping.so|2df838e6faa75b6223ced5ab7e58368e2132c1f8
 vendor/lib64/libvidhance.so|78f06bc683c17aeb6e186588e8051e808f596c2e
 
-# Camera-configs
+# Camera configs
 vendor/etc/camera/dual_golden_depth.bin
 
 # Display (Calibration Data)
@@ -160,13 +159,10 @@ vendor/usr/idc/uinput_nav.idc
 vendor/usr/keylayout/uinput-fpc.kl
 vendor/usr/keylayout/uinput_nav.kl
 
-# Graphics firmware
+# Graphics (Adreno firmware)
 vendor/firmware/a630_sqe.fw
-vendor/firmware/a650_gmu.bin
-vendor/firmware/a650_sqe.fw
-vendor/firmware/a702_sqe.fw
 
-# Sensor-configs
+# Sensors configs
 vendor/etc/sensors/config/bengal_default_sensors.json
 vendor/etc/sensors/config/bengal_dynamic_sensors.json
 vendor/etc/sensors/config/bengal_lis2doc_0.json
