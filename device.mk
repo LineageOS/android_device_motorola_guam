@@ -38,6 +38,10 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
+# Properties
+PRODUCT_PACKAGES += \
+    hardware.sku.XT2081-4.prop
+
 # Shipping API level
 BOARD_SHIPPING_API_LEVEL := 29
 PRODUCT_SHIPPING_API_LEVEL := 29
