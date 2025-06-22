@@ -36,8 +36,11 @@ PRODUCT_PACKAGES += \
 # Overlay
 PRODUCT_PACKAGES += \
     FrameworksResDevice \
+    FrameworksResDeviceXT2081-4 \
     LineagePlatformDevice \
-    SystemUIResDevice
+    SystemUIResDevice \
+    WifiResDevice \
+    WifiResDeviceXT2081-4
 
 # Properties
 PRODUCT_PACKAGES += \
