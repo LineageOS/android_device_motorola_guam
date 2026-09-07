@@ -7,5 +7,5 @@ prebuilt_etc {
     name: "hardware.sku.XT2081-4.prop",
     src: "hardware.sku.XT2081-4.prop",
     sub_dir: "props",
-    soc_specific: true,
+    product_specific: true,
 }
