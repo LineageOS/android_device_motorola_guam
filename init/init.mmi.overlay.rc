@@ -16,7 +16,7 @@ on fs
     insmod /vendor/lib/modules/qpnp_adaptive_charge.ko
     insmod /vendor/lib/modules/qpnp-power-on-mmi.ko
 
-    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules audio_snd_soc_aw882xx
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules sensors_class audio_snd_soc_aw882xx
 
 on early-boot
     # Goodix fingerprint
