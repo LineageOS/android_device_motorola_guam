@@ -32,18 +32,11 @@ lib_fixups: lib_fixups_user_type = {
 
 blob_fixups: blob_fixups_user_type = {
     (
-        'vendor/lib64/com.qti.feature2.gs.so',
-        'vendor/lib64/com.qti.feature2.rt.so',
         'vendor/lib64/hw/camera.qcom.so',
         'vendor/lib64/hw/com.qti.chi.override.so',
     ): blob_fixup()
         .binary_regex_replace(b'camera.mot.is.coming.cts', b'vendor.camera.coming.cts'),
-    'vendor/lib64/libvidhance.so': blob_fixup()
-        .add_needed('libcomparetf2_shim.so'),
-    (
-        'vendor/lib64/camera/components/com.qti.node.dewarp.so',
-        'vendor/lib64/camera/components/com.vidhance.node.processing.so',
-    ): blob_fixup()
+    'vendor/lib64/camera/components/com.qti.node.dewarp.so': blob_fixup()
         .replace_needed('libui.so', 'libui-v34.so'),
 }  # fmt: skip
 
