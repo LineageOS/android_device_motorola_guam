@@ -92,6 +92,7 @@ vendor/lib64/com.qti.feature2.stub.so|466c315140c99e19268b77e41e0f0f39da3722e7
 vendor/lib64/com.qti.feature2.swmf.so|3866b256f021a56974ce8c50817c2be82389d24b
 vendor/lib64/hw/camera.qcom.so|0a9749019bf86a99c7a1b1324c8f10c89edf2c0b|24ba2d9132f7b5dd1e194ffc2598af6a790ecbcf
 vendor/lib64/hw/com.qti.chi.override.so|4cd1e9a304fe9bda7a2575ab3c3eb0a4608b3ea6|901eebe034ac213b96714b311d222285b6428f96
+vendor/lib64/libaidenoiser.so|c1a9ae30c3834dc0e5e21b9bdbd7488f4146d8f5
 vendor/lib64/libbitmlengine.so|d863b89111ae6a0b83475704d5f20740dd7b1763
 vendor/lib64/libcamera_nn_stub.so|13d0b4012c263d2266c8a07a60cc6372acb978cc
 vendor/lib64/libcamerapostproc.so|171e679e37324df337295a71bc4e8323da6c1584
